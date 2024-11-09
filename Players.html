@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - BGMI Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="BGMI.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="team-header">
+            <img src="C:\Users\hdpat\Downloads\CYNNIC_SAINTS-removebg-preview.png" class="team-logo"> 
+        <h1>Cynic Saints</h1>
+        </div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="navbar" class="hidden">
+            <ul>
+                <li><a href="BGMI.html">Overview</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="Players.html">Players</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="players">
+            <h2 id="h2p">Our Successors</h2>
+            <div class="player-grid">
+                <!-- Player Card Example without image -->
+                <div class="player-card" onclick="openModal('player1')">
+                    <h3 class="player-name">CSxShalin</h3>
+                    <p class="player-role">Assaulter</p>
+                </div>
+                <div class="player-card" onclick="openModal('player2')">
+                    <h3 class="player-name">CSxZeus</h3>
+                    <p class="player-role">IGL</p>
+                </div>
+                <div class="player-card" onclick="openModal('player3')">
+                    <h3 class="player-name">CSxAntidote</h3>
+                    <p class="player-role">Free Men</p>
+                </div>
+                <div class="player-card" onclick="openModal('player4')">
+                    <h3 class="player-name">CSxKatana</h3>
+                    <p class="player-role">Supporter</p>
+                </div>
+                <div class="player-card" onclick="openModal('player5')">
+                    <h3 class="player-name">CSxNova</h3>
+                    <p class="player-role">Aspiring Player</p>
+                </div>
+                <div class="player-card" onclick="openModal('player6')">
+                    <h3 class="player-name">CSxNinja</h3>
+                    <p class="player-role">Sniper</p>
+                </div>
+                <div class="player-card" onclick="openModal('player7')">
+                    <h3 class="player-name">CSxFlash</h3>
+                    <p class="player-role">Assaulter</p>
+                </div>
+                <div class="player-card" onclick="openModal('player8')">
+                    <h3 class="player-name">CSxYoddha</h3>
+                    <p class="player-role">Assaulter</p>
+                </div>
+                <div class="player-card" onclick="openModal('player9')">
+                    <h3 class="player-name">CSxTatsoomi</h3>
+                    <p class="player-role">IGL</p>
+                </div>
+                <!-- Add more player cards as needed -->
+            </div>
+        </section>
+
+        <div class="player-container" id="playercontainer"></div>
+        <!-- Modal Structure -->
+        <div id="playerModal" class="modal", style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <img id="modalImage" class="modal-image" src="" alt="Player Image">
+                <h3 id="modalName" ></h3>
+                <p id="modalRole"></p>
+                <p id="modalStats" class="modal-stats"></p>
+                <p id="modalbirthDate" class="birthdate"></p>
+                <p id="modalBelongs" class="belongs"></p><br>
+                <p id="modalDetails"></p>
+                <a id="modalInstagram" href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </main>
+    <script src="BGMI.js"></script>
+</body>
+</html>
